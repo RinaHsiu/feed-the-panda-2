@@ -1,0 +1,33 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="CZ23hB2NdXA_vulxshW-">Player</variable><variable type="KIND_SpriteKind" id="Z+AOC_lkyaZ+rY2lEtbc">Projectile</variable><variable type="KIND_SpriteKind" id="mxf@GG_2wY.NrU3|#5_b">Food</variable><variable type="KIND_SpriteKind" id=".F]k`;po1u=CTvG%xCp|">Enemy</variable><variable id="YNUN|m9=bPvY2uWT@:fD">panda</variable><variable id="cv/US@$$)sJ%8Am}`7i~">mySprite</variable></variables><block type="pxt-on-start" id="WL%]@zG_%Wrt^2+UUuT4" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="[;(R%}IP9Cc^PcNXUm~g"><field name="VAR" id="YNUN|m9=bPvY2uWT@:fD">panda</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="V#c9DFTmi~3_Jjhtmy}U"><value name="img"><shadow type="screen_image_picker" id="pCVHfs}WJL7b7G-Avod9"><field name="img">img`
+. f f f . . . . f f f . . . . . 
+f c c c f f f f c c c f . . . . 
+f c a d 1 1 1 1 d a c f . . . . 
+f a d 1 1 1 1 1 1 d f . . . . . 
+. f c c c 1 1 c c c d f . . . . 
+. f c f c 1 1 c f c d f f f . . 
+. f c c 1 c c 1 c c f d c c f . 
+. f d 1 1 f f 1 1 d f 1 1 c c f 
+. . f d d d d d d a c 1 1 1 c f 
+. . f c 1 1 1 1 1 c c 1 1 1 c f 
+. . f c 1 1 1 1 1 c c 1 1 1 c f 
+. . f c f f f f f c c 1 1 c c f 
+. . f c f . . . f c f f f f c f 
+. . f f . . . . f f . . . . f f 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"pCVHfs}WJL7b7G-Avod9"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="rr6$77q7,.R=$SWFGrz~"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetvel" id="l$EKt2@wAnD,4CKvv%^D"><value name="sprite"><block type="variables_get" id="z1;#HpSOR.@upw(;={bb"><field name="VAR" id="YNUN|m9=bPvY2uWT@:fD">panda</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"></shadow><block type="device_random" id="M~#6Ci:Cw{c7pGWCpnQF"><value name="min"><shadow type="math_number" id="pDst`L1u}A[,HfnFU}~!"><field name="NUM">20</field></shadow></value><value name="limit"><shadow type="math_number" id="SslN@|)6kSB;5TfXuRdu"><field name="NUM">50</field></shadow></value></block></value><value name="vy"><shadow type="spriteSpeedPicker"></shadow><block type="device_random" id="eL!I5hJ{BTA:sPA{{*.e"><value name="min"><shadow type="math_number" id="S{ah]y(=~@3hTj5*W3_Z"><field name="NUM">40</field></shadow></value><value name="limit"><shadow type="math_number" id=",p{a*,%M-ZrsgXa`M#TG"><field name="NUM">60</field></shadow></value></block></value><next><block type="spritesetsetbounceonwall" id="-ZOLwv-kTuB0j29P?e@Y"><value name="sprite"><block type="variables_get" id="W*079vIpR)L(zDCVNM(1"><field name="VAR" id="YNUN|m9=bPvY2uWT@:fD">panda</field></block></value><value name="on"><shadow type="toggleOnOff" id="V{|r!ePeW7A@eN,R*23D"><field name="on">true</field></shadow></value></block></next></block></next></block></statement></block><block type="keyonevent" id="!7{fcF]8ZPec/d2hjIDR" x="90" y="330"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set" id=",q$M1b*YKzD8WRXN!d7Y"><field name="VAR" id="cv/US@$$)sJ%8Am}`7i~">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="_#H#32Kd7/OkZ]^xlezz"><value name="img"><shadow type="screen_image_picker" id="ow@#-SUFe%Vf%,L.vUlC"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"ow@#-SUFe%Vf%,L.vUlC"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="[AO+,NTyobEkuZ8[.^!v"><field name="MEMBER">Food</field></shadow></value></block></value></block></statement></block></xml>
